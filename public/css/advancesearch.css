@@ -1,0 +1,27 @@
+.searchbox{
+  margin-top: 50px;
+  box-shadow: 0px 1px 2px #2c3e50;
+  }
+.searchbox-header{
+  font-size: 30px;
+  background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+  text-shadow: 0px 1px 2px #2c3e50;
+  color: white;
+  padding: 20px;
+  box-shadow: 0px 1px 2px #2c3e50;
+
+}
+.searchbox-body{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+.line{
+  height: 2px;
+  background-color: rgba(22, 160, 133, 0.8);
+  box-shadow: 0px 1px 1px #2c3e50;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}

@@ -1,0 +1,43 @@
+.modal-header{
+	color: white;
+    background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+    padding:20px;
+    font-size: 18px;
+    text-shadow: 0px 1px 2px #2c3e50;
+}
+.modal-header{
+	color: white;
+    background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+    padding:20px;
+    font-size: 18px;
+    text-shadow: 0px 1px 2px #2c3e50;
+}
+.modal-content{
+	padding: 0 !important;
+}
+.modal-content .input-field{
+	margin:10px 0px 10px 0px;
+}
+.modal-content button{
+	margin:20px 0px 10px 0px;
+}
+.modal-content .info-container{
+	padding : 20px;
+}
+.modalsignin{
+	width: 30% !important;
+}
+.modal-button{
+	background-color: #16a085 !important;
+}
+.modal-button:hover{
+	background-color: #1abc9c !important;
+}
+#modalSignUp{
+	max-height: 100% !important;
+}
+@media only screen and (max-width: 992px) {
+	#modalsignin, #modalSignUp{
+		width: 80% !important;
+	}
+}

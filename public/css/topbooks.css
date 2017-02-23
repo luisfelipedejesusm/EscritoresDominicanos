@@ -1,0 +1,30 @@
+.top-books .top-books-header{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(22,160,133,1) 50%,rgba(255,255,255,0) 100%);
+  color: white;
+}
+.top-books .top-books-header h4{
+  text-shadow: 0px 1px 1px #2c3e50;
+}
+.books-header{
+  padding: 15px;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+  color: white;
+  text-shadow: 0px 1px 1px #2c3e50;
+  box-shadow: 0px 1px 1px #2c3e50;
+}
+.books{
+  margin-top: 20px;
+  box-shadow: 0px 1.5px 5px #2c3e50;
+}
+.book-body{
+  padding: 20px 35px 20px 35px !important;
+}
+#scroll{
+  position: fixed;
+  right: 0;
+  top: 280px;
+}

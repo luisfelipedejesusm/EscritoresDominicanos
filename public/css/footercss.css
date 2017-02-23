@@ -1,0 +1,93 @@
+.loader{
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;	
+}
+.loader-body{
+	height: 200px !important;
+	width: 200px !important;
+	top: 42%;
+	left: 42%;
+	position: fixed;
+}
+.loader-text{
+	position: absolute;
+	top: 53%;
+	left: 44%;
+	font-size: 30px;
+	color: #27ae60;
+	text-shadow: 0px 1px 2px #2c3e50;
+}
+.circle-clipper .circle{
+	border-color: #27ae60 !important;
+	border-bottom-color: transparent !important;
+}
+.back{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("../img/background-book.png");
+	background-repeat: repeat;
+	background-size: 150px 150px;
+	opacity: 0.08;
+	z-index: -10;
+	height: 100%;
+	width: 100%;
+}
+#contactanosFooter{
+	font-size: 35px;
+	text-shadow: -1px 1px 2px #2c3e50;
+	padding-bottom: 10px;
+}
+.textAutores{
+	color: white;
+}
+.textAutores h5, .textAutores a, .mensaje-footer h5{
+	color: white;
+	text-shadow: -1px 1px 2px #2c3e50;
+}
+
+.footer-fondo{
+	background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+}
+.inputs-footer input:focus, .inputs-footer textarea:focus{
+  border-bottom: 1px solid #138972 !important;
+}
+.inputs-footer input, .inputs-footer textarea{
+  border-bottom: 1px solid white !important;
+  color: white;
+}
+.inputs-footer button{
+	background-color: #138972;
+}
+.inputs-footer button:hover{
+	background-color: #16a085;
+}
+.inputs-footer input::-webkit-input-placeholder, .inputs-footer textarea::-webkit-input-placeholder{
+	color: white;
+
+}
+/*::-webkit-input-placeholder {
+  color: white;
+}
+:-ms-input-placeholder {
+  color: white;
+}
+::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: white;
+  opacity: 1;
+}*/
+#toast-container{
+  top: auto !important;
+  right: auto !important;
+  bottom: 10%;
+  left:7%; 
+}
