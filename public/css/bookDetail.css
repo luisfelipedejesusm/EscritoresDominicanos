@@ -1,0 +1,164 @@
+
+.libro-datos p, .tags{
+	margin: 0 0 0 20px;
+}
+.stars{
+	color: white !important;
+}
+.stars a{
+	-webkit-text-stroke: 2px #16a085;
+	color: white !important;
+}
+.tags{
+	margin-top: 5px;
+}
+.book-image{
+	box-shadow: 0px 2px 2px #2c3e50;
+}
+.libro-precio{
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%); 
+	margin: 30px 0 10px 0;
+	padding: 13px;
+	box-shadow: 0px 2px 2px #2c3e50;
+	font-size: 18px;
+	color: white;
+	text-shadow: 0px 1px 2px #2c3e50;
+	line-height: 50px;
+}
+.libro-thumbs a i{
+	font-size: 40px !important;
+}
+.btnlike, .btndislike{
+	color: #16a085;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btnlike:hover{
+	color: #27ae60;
+}
+.btndislike:hover{
+	color: #e74c3c;
+}
+.thumbs{
+	margin:30px 0 10px 0;
+}
+.thumbs p{
+	margin: 0;
+}
+.autor-buttons a{
+	width: 100%;
+	margin: 5px 0 5px 0;
+	height: 50px;
+	line-height: 50px;
+}
+.libro-autor{
+	top : 50px;
+	padding-left: 30px !important;
+}
+.autor-info{
+	padding: 35px;
+	box-shadow: 0px 2px 2px #2c3e50;
+	border: 3px solid #16a085;
+}
+.autor-linea{
+	height: 3px;
+	background-color: rgba(22, 160, 133, 0.8);
+    box-shadow: 0px 1px 1px #2c3e50;
+    margin:10px 0 20px 0;
+}
+#BookDetailModalTelefono{
+}
+.modal-header{
+	color: white;
+    background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+    padding:20px;
+    font-size: 18px;
+    text-shadow: 0px 1px 2px #2c3e50;
+}
+.modal-content .info-container{
+	padding : 20px;
+}
+.info-container{
+	font-size: 20px;
+	padding-bottom: 18px !important;
+}
+.modalemail{
+	width: 60% !important;
+	min-height: 85% !important;
+	max-height: 85% !important;
+	height: 85% !important;
+}
+.modaltelefono{
+	width: 30% !important;	
+}
+#BookDetailModalEmail textarea{
+	max-height: 70px;
+	min-height: 70px;
+	height: 70px;
+}
+.modalmap{
+	width: 90%;
+	min-height: 85% !important;
+	max-height: 85% !important;
+	height: 85% !important;
+}
+.mapheader{
+	color: white;
+    background: linear-gradient(to right, rgba(22,160,133,1) 0%,rgba(26,188,156,1) 50%,rgba(22,160,133,1) 100%);
+    padding:20px;
+    font-size: 18px;
+    text-shadow: 0px 1px 2px #2c3e50;
+    margin-bottom: 0;
+}
+.info-container{
+	margin-bottom: 0;
+}
+.mapicon{
+	height: 70px; 
+	background-color: black; 
+	margin-top: 20px;
+}
+.map-text{
+	font-size: 15px;
+	margin-top: 30px;
+}
+.map-text p{
+	margin:0 5px 0 5px;
+}
+#location_nombre{
+	font-size: 18px !important;
+}
+#location_direccion{
+	color: gray;
+}
+.maplocation{
+	padding-bottom: 20px !important;
+	-moz-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+.maplocation:hover{
+	background-color: #bdc3c7;
+	cursor: pointer;
+}
+.mapcontent{
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	border-top: 0;
+	overflow-y: scroll;
+	max-height:82%;
+}
+@media only screen and (max-width: 992px) {
+	.modaltelefono, .modalemail{
+		width: 90% !important;	
+	}
+	#map{
+		height: 35% !important;
+	}
+	.mapcontent{
+		max-height:35%;
+	}
+}

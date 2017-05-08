@@ -4,12 +4,12 @@
         <h5 id="contactanosFooter" class="white-text center-align">Siguenos en ...</h5>
 
         <div class="row" id="iconsFooter">
-          <div class="col s2"><img src="{{asset('img/inco-facebook.png')}}"></div>
-          <div class="col s2"><img src="{{asset('img/icon-twiter.png')}}"></div>
-          <div class="col s2"><img src="{{asset('img/icon-youtube.png')}}"></div>
-          <div class="col s2"><img src="{{asset('img/icon-snap.png')}}"></div>
-          <div class="col s2"><img src="{{asset('img/icon-norecuerdo.png')}}"></div>
-          <div class="col s2"><img src="{{asset('img/icon-github.png')}}"></div>
+          <div class="col s2"><img src="{{asset('public/img/inco-facebook.png')}}"></div>
+          <div class="col s2"><img src="{{asset('public/img/icon-twiter.png')}}"></div>
+          <div class="col s2"><img src="{{asset('public/img/icon-youtube.png')}}"></div>
+          <div class="col s2"><img src="{{asset('public/img/icon-snap.png')}}"></div>
+          <div class="col s2"><img src="{{asset('public/img/icon-norecuerdo.png')}}"></div>
+          <div class="col s2"><img src="{{asset('public/img/icon-github.png')}}"></div>
         </div>
 
       </div>

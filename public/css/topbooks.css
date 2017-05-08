@@ -5,6 +5,21 @@
   background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(22,160,133,1) 50%,rgba(255,255,255,0) 100%);
   color: white;
 }
+.top-books{
+  padding: 0 !important;
+}
+.card-content{
+  padding: 10px !important;
+}
+.card-action{
+  padding: 10px !important;
+  font-size: 11px;
+  color: white !important;
+  text-shadow: 0px 1px 1px #2c3e50;
+}
+.card-action a{
+  color: #1abc9c !important;
+}
 .top-books .top-books-header h4{
   text-shadow: 0px 1px 1px #2c3e50;
 }
@@ -26,5 +41,11 @@
 #scroll{
   position: fixed;
   right: 0;
-  top: 280px;
+}
+@media only screen and (max-width: 992px) {
+  
+  .book-body{
+    padding: 20px 10px 20px 10px !important;
+  }
+
 }

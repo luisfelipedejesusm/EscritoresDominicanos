@@ -1,7 +1,7 @@
 
 
 <div id="topbooks" class="row">
-  <div class="col l8 s10 offset-l1 offset-s1 top-books">
+  <div class="col l8 s12 offset-l1 top-books">
     <div class="center-align top-books-header">
       <h4>Top Libros</h4>
     </div>
@@ -14,7 +14,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -31,7 +31,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -48,7 +48,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -72,7 +72,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -89,7 +89,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -106,7 +106,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -130,7 +130,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -147,7 +147,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -164,7 +164,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -188,7 +188,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -205,7 +205,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -222,7 +222,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -246,7 +246,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -263,7 +263,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -280,7 +280,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -304,7 +304,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -321,7 +321,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -338,7 +338,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -362,7 +362,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -379,7 +379,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -396,7 +396,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -420,7 +420,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -437,7 +437,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -454,7 +454,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -478,7 +478,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -495,7 +495,7 @@
           <div class="col l4 s6">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>
@@ -512,7 +512,7 @@
           <div class="col l4 s6 offset-s3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{asset('img/book.jpg')}}">
+                <img class="activator" src="{{asset('public/img/book.jpg')}}">
               </div>
               <div class="card-content">
                 <p>Nombre del libro</p>

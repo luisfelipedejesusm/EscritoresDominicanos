@@ -1,10 +1,58 @@
-
+    $(window).on('load',function(){
+      $('.loader').fadeOut();
+    });
 
   $(document).ready(function(){
-  $(window).on('load',function(){
-    $('.loader').fadeOut();
-  });
+
             var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+
+            $('#advancesearch-form').submit(function(){
+              var tagsObject = $('#chips-div').material_chip('data');              
+              $.each(tagsObject,function(i,tagsObject){
+                $('<input />').attr('type', 'hidden')
+                  .attr('name', "tags-search[]")
+                  .attr('value', tagsObject.tag)
+                  .appendTo('#advancesearch-form');
+                  console.log(tagsObject.tag);
+              });
+              /*$('<input />').attr('type', 'hidden')
+                  .attr('name', "busquedaTag")
+                  .attr('value', $('#busqueda-tags').prop('checked'))
+                  .appendTo('#advancesearch-form');
+                  console.log(tagsObject.tag);*/
+              return true;
+            })
+           /* $('#btn_buscar').click(function(){
+              var tagsObject = $('#chips-div').material_chip('data');              
+              $.each(tagsObject,function(i,tagObject){
+                $('<input />').attr('type', 'hidden')
+                  .attr('name', "tags-search[]")
+                  .attr('value', tagObject.tag)
+                  .appendTo('#search-form');
+                  console.log(tagObject.tag);
+              })
+
+              $('#advancesearch-form').submit();
+            })*/
+
+            $('#btnhomesearch').click(function(){ 
+                    $('#search-form').submit();
+                    /*$.ajax({
+                      type : 'Post',
+                      data: {
+                        _token: CSRF_TOKEN, 
+                        tipodebusqueda: 'normal',
+                        search_text: $('#input_home_search').val() 
+                      },
+                      url : '/FinalProject/findBooks'
+                    })*/
+                    /*$.post( "/FinalProject/findBooks", { 
+                        _token: CSRF_TOKEN, 
+                        tipodebusqueda: 'normal',
+                        search_text: $('#input_home_search').val()  
+                      } );*/
+            });
+
 
     $('#signInbtn').click(function(){
       $('.loader').show();
@@ -16,16 +64,25 @@
         usuario: $('#txtusuario').val(),
         contrasenia: $('#txtcontrasenia').val()
       },
-      url : '/usuario/login',
+      url : '/FinalProject/usuario/login',
       dataType: 'Json',
       success : function(data){
         if(data.message == 'success'){
-          window.location = './'
+          location.reload();
+        }else if(data.message == 'contrasenia'){
+          $('.loader').fadeOut();
+          Materialize.toast('Contrasenia Incorrecta', 4000);
+        }else if(data.message == 'usuario'){
+          $('.loader').fadeOut();
+          Materialize.toast('Usuario incorrecto o no ha sido verificado', 4000);          
         }else{
           $('.loader').fadeOut();
-          Materialize.toast('Error al autenticar al usuario ' + data.message + '. Revise su usuario o contrasenia', 4000, 'rounded');
-        }     
-      }
+          Materialize.toast('Hubo un problema con el servidor', 4000);
+        }            
+      },
+      error: function (jqXHR, exception) {
+          console.log(jqXHR.responseText);
+        }
     })
     })
         $('#signUnbtn').click(function(){
@@ -43,52 +100,36 @@
                       correo: $('#txtcorreosignup').val(),
                       contrasenia: $('#txtpasswordsignup').val()
                     },
-                    url : '/usuario/register',
+                    url : '/FinalProject/usuario/register',
                     dataType: 'Json',
                     success : function(data){
                       if(data.message == 'success'){
-                        window.location = './'
+                        $('.loader').fadeOut();                        
+                        Materialize.toast('Se ha enviado un correo de verificacion a ' + $('#txtcorreosignup').val(), 4000);
                       }else{
                         $('.loader').fadeOut();
-                        Materialize.toast('Error al registrar al usuario ' + data.message + '. Revise su usuario o contrasenia', 4000, 'rounded');
+                        Materialize.toast('Error al registrar al usuario ' + data.message + '. Revise su usuario o contrasenia', 4000);
                         console.log(data);
-                      }     
-                    }
+                      }
+                    },
+                      error: function (jqXHR, exception) {
+                        console.log(jqXHR.responseText);
+                      }    
                   })
 
           }else{
             $('.loader').fadeOut();
-              Materialize.toast('Las contrasenias no son iguales', 4000, 'rounded');
+              Materialize.toast('Las contrasenias no son iguales', 4000);
           }
 
         }else{
           $('.loader').fadeOut();
-          Materialize.toast('Complete todo los campos', 4000, 'rounded');
+          Materialize.toast('Complete todo los campos', 4000);
         }
 
 
     })
-        $('#signout_btn').click(function(){
-          $('.loader').show();
-
-      $.ajax({
-      type : 'Post',
-      data: {
-        _token: CSRF_TOKEN 
-      },
-      url : '/usuario/logout',
-      dataType: 'Json',
-      success : function(data){
-        if(data.message == 'success'){
-          window.location = './'
-        }else{
-          $('.loader').fadeOut();
-          Materialize.toast('Error al autenticar al usuario. Revise su usuario o contrasenia', 4000, 'rounded');
-        }     
-      }
-    })
-        })
-
+        
 
     $('#homeindexbtn').click(function(){
       $('.parallax').parallax();
@@ -107,7 +148,7 @@
 
   	$(".button-collapse").sideNav();
   	$('.parallax').parallax();
-  	$('#input-search').focus(function(){
+  	$('#input_home_search').focus(function(){
   		$('#div-prueba').css('z-index','999999');
   		$('#div-prueba').css('background-color','rgba(255,255,255,0.95)');
   		$('#overlay').fadeIn(300);
@@ -130,7 +171,10 @@
   Materialize.scrollFire(options);
   $('.datepicker').pickadate({
   selectMonths: true, // Creates a dropdown to control month
-  selectYears: 15 // Creates a dropdown of 15 years to control year
+  selectYears: 200,
+  min:0,
+  max:true, // Creates a dropdown of 15 years to control year
+  format: 'yyyy-mm-dd'
 });
 
   $('.chips-placeholder').material_chip({
@@ -185,6 +229,8 @@
     'Fantasia': null,
     'Hechos Reales': null,
     'Vivencias': null,
+    'Cuentos': null,
+    'Novela': null,
     'Varios': null
   }
 });

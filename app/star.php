@@ -15,4 +15,7 @@ class star extends Model
     {
     	return $this->belongsTo('App\book');
     }
+    public function User(){
+    	return $this->belongsTo('App\User');
+    }
 }

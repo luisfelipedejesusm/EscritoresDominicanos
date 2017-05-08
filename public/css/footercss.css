@@ -8,11 +8,20 @@
 	z-index: 9999;	
 }
 .loader-body{
-	height: 200px !important;
-	width: 200px !important;
-	top: 42%;
-	left: 42%;
+	height: 30vw !important;
+	width: 30vw !important;
+	left: 35%;
 	position: fixed;
+}
+@media only screen and (max-width: 992px) {
+	
+	.loader-body{
+		height: 50vw !important;
+		width: 50vw !important;
+		left: 25%;
+		position: fixed;
+	}
+
 }
 .loader-text{
 	position: absolute;
@@ -85,9 +94,12 @@
   color: white;
   opacity: 1;
 }*/
-#toast-container{
-  top: auto !important;
-  right: auto !important;
-  bottom: 10%;
-  left:7%; 
+@media only screen and (min-width: 993px) {
+	#toast-container{
+	  top: auto !important;
+	  right: auto !important;
+	  bottom: 10%;
+	  left:7%; 
+	}
 }
+

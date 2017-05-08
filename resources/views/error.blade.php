@@ -1,0 +1,1 @@
+{{$error}}. <a href="{{url('/')}}">Volver al inicio</a>

@@ -21,4 +21,7 @@ class book extends Model
     public function tag(){
         return $this->hasMany('App\tag');
     }
+    public function book_locations(){
+        return $this->hasMany('App\book_locations');
+    }    
 }
